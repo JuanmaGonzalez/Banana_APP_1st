@@ -1,21 +1,18 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">My JSP Servlet</a>
-		</div>
-		<div id="navbar" class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="./login">Inicio</a></li>
-				<li><a href="./lista_maquillajes">Lista de Maquillajes</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			<p class="navbar-text navbar-right">Hola <b>${idUsuario}</b> <a href="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></p>
-		</div>
-
-	</div>
-</nav>
-
-<br>
-<br>
-<br>
-<br>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#">
+        <h1 class="logo">Banana GEST</h1>
+        </a> </div>
+      <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Proyectos</a></li>
+          <li><a href="#">Tareas</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="profileBtn"><a class="navItems glyphicon glyphicon-user" href="profile.html"><span class="profile">${idUsuario}</span></a> <a href="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

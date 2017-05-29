@@ -1,0 +1,151 @@
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: local('Material Icons'),  local('MaterialIcons-Regular'),  url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),  url(../fonts/MaterialIcons-Regular.woff) format('woff'),  url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+}
+body {
+	background: #b3dced;
+	font-family: 'Roboto', sans-serif;
+	color: #595959;
+}
+.Absolute-Center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.Absolute-Center.is-Responsive {
+	width: 50%;
+	height: 45%;
+	min-width: 200px;
+	max-width: 400px;
+	padding: 20px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body>#containerId {
+	max-width: 960px;
+}
+
+
+header {
+	width: 100%;
+	border-bottom: 2px solid #8cb3d9;
+	padding: 15px;
+	text-align: left;
+}
+header h1 {
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	font-family: 'Rock Salt', cursive;
+	color: #e6e600;
+	text-shadow: 1px 1px 2px rgba(2, 2, 2, 0.22);
+}
+header h2 {
+	font-size: 20px;
+	padding: 0px;
+}
+section {
+	padding: 15px;
+	border-bottom: 2px solid #8cb3d9;
+	margin-bottom: 80px;
+}
+section a {
+	font-size: 12px;
+	color: #6699cc;
+}
+section a:hover {
+	color: #8cb3d9;
+}
+
+.Login-Form{ 
+	background: #FFFFFF;
+	border: 1px #CCCCCC solid;
+	border-radius: 12px;
+	-webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+}
+
+.errorInput {
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(204,0,0,0.9);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(204,0,0,0.9);
+	box-shadow: 0px 1px 1px 0px rgba(204,0,0,0.9);
+}
+.errorP {
+	font-size: 10px;
+	font-weight: 300;
+	color: #e60000;
+	padding-bottom: 5px;
+}
+.box1 {
+	width: 250px;
+	padding: 30px 20px;
+	margin: 30px auto;
+	border-radius: 4px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+}
+.btnLogin {
+	width: 60px;
+	border: none;
+	color: #fff;
+	background: #336699;
+	background: -webkit-linear-gradient(#336699, #2d5986);
+	background: -o-linear-gradient(#336699, #2d5986);
+	background: -moz-linear-gradient(#336699, #2d5986);
+	background: linear-gradient(#336699, #2d5986);
+	padding: 5px 0;
+	margin: 5px 0 20px 0;
+	font-size: 14px;
+	border-radius: 2px;
+}
+.btnLogin:hover {
+	color: #e6e600;
+}
+article p {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/*mensajes de error*/
+.mensajes_error div {
+	display: none;
+}
+.mensajes_error div.show {
+	display: block;
+}
+.mensajes_error_fPass div {
+	display: none;
+}
+.mensajes_error_fPass div.show {
+	display: block;
+}

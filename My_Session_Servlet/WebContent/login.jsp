@@ -1,12 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Banana GEST Login</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/login.css">
+	
+</head>
 
-<jsp:include page="head.jsp"></jsp:include>
 
 <%
 	String mierror = (String) request.getAttribute("mierror");
@@ -14,8 +19,6 @@
 %>
 
 <body>
-
-	<jsp:include page="header.jsp"></jsp:include>
 
 	<div class="container">
 		<div class="row">
@@ -31,13 +34,13 @@
 				<form action="login" method="POST" class="form-horizontal">
 
 					<div class="form-group <%=errorclass%>">
-						<label><b>Correo electrÃ³nico</b></label> <input
+						<label><b>Correo electrónico</b></label> <input
 							class="form-control" type="email"
-							placeholder="Correo electrÃ³nico" name="email">
+							placeholder="Correo electrónico" name="email">
 					</div>
 					<div class="form-group <%=errorclass%>">
-						<label><b>ContraseÃ±a</b></label> <input class="form-control"
-							type="password" placeholder="ContraseÃ±a" name="password">
+						<label><b>Contraseña</b></label> <input class="form-control"
+							type="password" placeholder="Contraseña" name="password">
 					</div>
 
 					<div>
@@ -48,8 +51,5 @@
 			</div>
 		</div>
 	</div>
-
-	<jsp:include page="footer.jsp"></jsp:include>
-
 </body>
 </html>

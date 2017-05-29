@@ -9,9 +9,10 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Proyectos</a></li>
           <li><a href="#">Tareas</a></li>
+          <li><a href="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li id="profileBtn"><a class="navItems glyphicon glyphicon-user" href="profile.html"><span class="profile">${idUsuario}</span></a> <a href="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a></li>
+          <li id="profileBtn"><a class="navItems glyphicon glyphicon-user" href="profile.html"><span class="profile">${idUsuario}</span></a></li>
         </ul>
       </div>
     </div>

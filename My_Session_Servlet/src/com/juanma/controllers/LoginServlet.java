@@ -31,9 +31,9 @@ public class LoginServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String contrasena = request.getParameter("password");
 				
-		if( email.equals("pepe@e.es") && contrasena.equals("lucas") ){
+		if( email.equals("ricardo@r.es") && contrasena.equals("qwerty") ){
 			HttpSession misession= (HttpSession)request.getSession();
-			misession.setAttribute("idUsuario", "pepe@e.es");
+			misession.setAttribute("idUsuario", "ricardo@r.es");
 			
 			request.getRequestDispatcher("/lista_maquillajes").forward(request, response);
 		}else{

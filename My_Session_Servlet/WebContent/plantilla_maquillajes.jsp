@@ -18,11 +18,11 @@ Maquillaje[] listaRecibida = (Maquillaje[])request.getAttribute("listaMaquillaje
 			<div class="row">
 				<div class="col-md-12 well">
 
-					<h3 class="text-center">Lista de Maquillajes</h3>
+					<h3 class="text-center">Lista de Proyectos</h3>
 
 					<table class="table table-striped table-hover">
 						<tr>
-							<th>Marca</th><th>Código</th><th>Tipo</th><th>Precio</th>
+							<th>Identificador</th><th>Proyecto</th><th>Fecha</th><th>Estado</th>
 						</tr>
 
 						<% if(listaRecibida!=null) for(Maquillaje maq:listaRecibida){ %>

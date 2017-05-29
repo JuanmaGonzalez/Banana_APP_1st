@@ -1,17 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Banana GEST Login</title>
-	
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="./css/bootstrap.css">
-	<link rel="stylesheet" href="./css/login.css">
-	
-</head>
+<html>
 
+<jsp:include page="head.jsp"></jsp:include>
 
 <%
 	String mierror = (String) request.getAttribute("mierror");
@@ -22,34 +12,53 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4  col-md-offset-4 jumbotron">
-				<h2 class="text-center">Formulario de Login</h2>
+			<div class="Absolute-Center is-Responsive Login-Form">
 
+				<header>
+					<h2>Log In</h2>
+				</header>
 
 				<c:if test="$(not empty mierror)">
 					<div class="alert alert-danger text-center">
 						<strong><c:out value="mierror"></c:out></strong>
 					</div>
 				</c:if>
-				<form action="login" method="POST" class="form-horizontal">
 
-					<div class="form-group <%=errorclass%>">
-						<label><b>Correo electrónico</b></label> <input
-							class="form-control" type="email"
-							placeholder="Correo electrónico" name="email">
-					</div>
-					<div class="form-group <%=errorclass%>">
-						<label><b>Contraseña</b></label> <input class="form-control"
-							type="password" placeholder="Contraseña" name="password">
-					</div>
-
-					<div>
-						<button class="btn btn-default pull-right">Login</button>
-					</div>
-
-				</form>
+				<section>
+					<form method="post" id="loginForm" novalidate>
+						<div class="form-group <%=errorclass%>">
+							<label for="email">Correo electrónico: </label> <input
+								class="form-control" type="email" name="email" id="email"
+								placeholder="email@ejemplo.com" required>
+							<div class="mensajes_error">
+								<div id="email[valueMissing]" class="errorP">Introduzca
+									sus datos.</div>
+								<div id="email[typeMismatch]" class="errorP">El formato no
+									se corresponde con un email.</div>
+							</div>
+						</div>
+						<div class="form-group <%=errorclass%>">
+							<label for="pass">Contraseña: </label> <input
+								class="form-control" type="password" name="password" id="pass"
+								placeholder="Contraseña" minlength="6" pattern="[a-z 0-9]*"
+								required>
+							<div class="mensajes_error">
+								<div id="pass[valueMissing]" class="errorP">Introduzca sus
+									datos.</div>
+								<div id="pass[tooShort]" class="errorP">El password debe
+									contener como minimo 6 caracteres.</div>
+							</div>
+						</div>
+						<div>
+							<input class="btn btn-default pull-right" type="submit"
+								form="loginForm" value="Login" id="btnLoginId">
+						</div>
+					</form>
+					<a href="forgotPass.html">Has olvidado tu Password?</a>
+				</section>
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>

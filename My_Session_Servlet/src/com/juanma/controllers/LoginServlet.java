@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet {
 		HttpSession misession= (HttpSession)request.getSession();
 		
 		if( misession.getAttribute("idUsuario")!=null ){
-			request.getRequestDispatcher("/lista_maquillajes").forward(request, response);
+			request.getRequestDispatcher("/lista_proyectos").forward(request, response);
 		}else{
 			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 			rd.forward(request, response);

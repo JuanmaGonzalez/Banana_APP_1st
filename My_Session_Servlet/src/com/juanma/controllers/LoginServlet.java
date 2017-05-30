@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
 			HttpSession misession= (HttpSession)request.getSession();
 			misession.setAttribute("idUsuario", "ricardo@r.es");
 			
-			request.getRequestDispatcher("/lista_maquillajes").forward(request, response);
+			request.getRequestDispatcher("/lista_proyectos").forward(request, response);
 		}else{
 			request.setAttribute("mierror", "Email y contraseña erroneos");
 			doGet(request, response);

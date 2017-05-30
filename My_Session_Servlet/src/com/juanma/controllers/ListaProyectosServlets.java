@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
 import com.juanma.models.Maquillaje;
 
 
-@WebServlet("/lista_maquillajes")
-public class ListaMaquillajesServlets extends HttpServlet {
+@WebServlet("/lista_proyectos")
+public class ListaProyectosServlets extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
  

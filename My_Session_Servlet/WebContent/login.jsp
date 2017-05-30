@@ -64,4 +64,5 @@
 	</div>
 
 </body>
+<script src="./js/login01.js"></script>
 </html>

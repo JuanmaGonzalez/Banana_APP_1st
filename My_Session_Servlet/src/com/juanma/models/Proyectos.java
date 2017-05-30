@@ -1,12 +1,12 @@
 package com.juanma.models;
 
-public class Maquillaje {
+public class Proyectos {
 	private String codigo;
 	private String marca;
 	private String tipo;
 	private int precio;
 	
-	public Maquillaje(String marca, String tipo,int precio) {
+	public Proyectos (String marca, String tipo,int precio) {
 		this.codigo = ""+Math.random();
 		this.marca=marca;
 		this.tipo = tipo;

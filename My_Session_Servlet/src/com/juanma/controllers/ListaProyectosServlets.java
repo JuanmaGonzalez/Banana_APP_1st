@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.juanma.models.Maquillaje;
+
+import com.juanma.models.Proyectos;
 
 
 @WebServlet("/lista_proyectos")
@@ -21,28 +22,33 @@ public class ListaProyectosServlets extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession misession= (HttpSession) request.getSession();
 		
+		
 	
 		if(misession.getAttribute("idUsuario")!=null){
-		Maquillaje[] listaMaquillajes = {
-				new Maquillaje("Sitio web de Hola a todos", "Ricardo", 10),
-				new Maquillaje("Pantalla de inicio", "Ricardo", 20),
-				new Maquillaje("Cambiar fondo", "Ricardo", 30),
-				new Maquillaje("Pantalla Acerca de...", "Juana", 10),
-				new Maquillaje("Estandarizar formulario", "Juana", 20),
-				new Maquillaje("Corregir problemas responsive", "Juana", 30),
-				new Maquillaje("Autocompletar", "Luis", 30),
-				new Maquillaje("Guardado automático", "Luis", 30),
-				new Maquillaje("Consulta Base de datos", "Luis", 30)
+			Proyectos[] listaProyectos = {
+				new Proyectos("Sitio web de Hola a todos", "Ricardo", 10),
+				new Proyectos("Pantalla de inicio", "Ricardo", 20),
+				new Proyectos("Cambiar fondo", "Ricardo", 30),
+				new Proyectos("Pantalla Acerca de...", "Juana", 10),
+				new Proyectos("Estandarizar formulario", "Juana", 20),
+				new Proyectos("Corregir problemas responsive", "Juana", 30),
+				new Proyectos("Autocompletar", "Luis", 30),
+				new Proyectos("Guardado automático", "Luis", 30),
+				new Proyectos("Consulta Base de datos", "Luis", 30) };
 			
-	
 				
-		};
+				if(misession.getAttribute("idUsuario")=="ricardo@l.es"){
+					
+					
+				}
+				
 		
-		System.out.println("***Lista:"+listaMaquillajes);
 		
-		request.setAttribute("listaMaquillajesAMostrar", listaMaquillajes);
+		System.out.println("***Lista:"+listaProyectos);
 		
-		request.getRequestDispatcher("plantilla_maquillajes.jsp").forward(request, response);
+		request.setAttribute("listaProyectosMostrar", listaProyectos);
+		
+		request.getRequestDispatcher("plantilla_proyectos.jsp").forward(request, response);
 		
 		}else{
 			

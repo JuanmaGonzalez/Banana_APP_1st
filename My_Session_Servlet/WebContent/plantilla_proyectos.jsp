@@ -1,4 +1,4 @@
-<%@page import="com.juanma.models.Maquillaje"%>
+<%@page import="com.juanma.models.Proyectos"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 	<jsp:include page="header.jsp"></jsp:include>
 
 <% 
-Maquillaje[] listaRecibida = (Maquillaje[])request.getAttribute("listaMaquillajesAMostrar");
+Proyectos[] listaRecibida = ( Proyectos [])request.getAttribute("listaProyectosMostrar");
 %>
 
 	<section>
@@ -25,7 +25,7 @@ Maquillaje[] listaRecibida = (Maquillaje[])request.getAttribute("listaMaquillaje
 							<th>Identificador</th><th>Proyecto</th><th>Fecha</th><th>Estado</th>
 						</tr>
 
-						<% if(listaRecibida!=null) for(Maquillaje maq:listaRecibida){ %>
+						<% if(listaRecibida!=null) for(Proyectos maq:listaRecibida){ %>
 
 						<tr>
 							<td><b><%=maq.getMarca() %></b></td><td><%=maq.getCodigo() %></td><td><%=maq.getTipo() %></td><td><%=maq.getPrecio() %></td>

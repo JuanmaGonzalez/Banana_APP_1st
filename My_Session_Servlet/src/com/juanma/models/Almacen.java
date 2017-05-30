@@ -4,20 +4,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Almacen {
-	Map<String, Maquillaje> cosmeticos;
+	Map<String, Proyectos> cosmeticos;
 
 	public Almacen() {
-		this.cosmeticos = new HashMap<String, Maquillaje>();
+		this.cosmeticos = new HashMap<String, Proyectos>();
 	}
 
-	public boolean almacenar(Maquillaje unMaquillaje) {
-		this.cosmeticos.put(unMaquillaje.getCodigo(), unMaquillaje);
+	public boolean almacenar(Proyectos unProyecto) {
+		this.cosmeticos.put(unProyecto.getCodigo(), unProyecto);
 		return true;
 	}
 
-	public Maquillaje retirar(String unCodigo) {
+	public Proyectos retirar(String unCodigo) {
 		if (this.cosmeticos != null && unCodigo.trim() != "") {
-			Maquillaje elMaquillajeARetirar = this.cosmeticos.get(unCodigo);
+			Proyectos elMaquillajeARetirar = this.cosmeticos.get(unCodigo);
 			this.cosmeticos.remove(unCodigo);
 			return elMaquillajeARetirar;
 		} else
@@ -26,7 +26,7 @@ public class Almacen {
 
 	public void muestraLosCosmeticos() {
 		for(Map.Entry m : this.cosmeticos.entrySet() ){
-			System.out.println(m.getKey()+" / "+ m.getValue() +" / "+ ((Maquillaje)m.getValue()).getMarca() );
+			System.out.println(m.getKey()+" / "+ m.getValue() +" / "+ ((Proyectos)m.getValue()).getMarca() );
 		}
 	}
 

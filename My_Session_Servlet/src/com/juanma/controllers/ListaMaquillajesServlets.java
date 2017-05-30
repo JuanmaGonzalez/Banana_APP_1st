@@ -24,13 +24,15 @@ public class ListaMaquillajesServlets extends HttpServlet {
 	
 		if(misession.getAttribute("idUsuario")!=null){
 		Maquillaje[] listaMaquillajes = {
-				new Maquillaje("Max Factor", "labios", 10),
-				new Maquillaje("Loreal", "cabello", 20),
-				new Maquillaje("Estee Lauder", "ojos", 30),
-				new Maquillaje("Vichy", "labios", 10),
-				new Maquillaje("Ponds", "cabello", 20),
-				new Maquillaje("La Perla", "ojos", 30)
-		
+				new Maquillaje("Sitio web de Hola a todos", "Ricardo", 10),
+				new Maquillaje("Pantalla de inicio", "Ricardo", 20),
+				new Maquillaje("Cambiar fondo", "Ricardo", 30),
+				new Maquillaje("Pantalla Acerca de...", "Juana", 10),
+				new Maquillaje("Estandarizar formulario", "Juana", 20),
+				new Maquillaje("Corregir problemas responsive", "Juana", 30),
+				new Maquillaje("Autocompletar", "Luis", 30),
+				new Maquillaje("Guardado automático", "Luis", 30),
+				new Maquillaje("Consulta Base de datos", "Luis", 30)
 			
 	
 				

@@ -36,6 +36,17 @@ public class LoginServlet extends HttpServlet {
 			misession.setAttribute("idUsuario", "ricardo@r.es");
 			
 			request.getRequestDispatcher("/lista_proyectos").forward(request, response);
+			
+		 }else if ( email.equals("juana@j.es") && contrasena.equals("qwerty") ){
+				HttpSession misession= (HttpSession)request.getSession();
+				misession.setAttribute("idUsuario", "juana@j.es");
+				
+				request.getRequestDispatcher("/lista_proyectos").forward(request, response);
+		 }else if ( email.equals("luis@l.es") && contrasena.equals("qwerty") ){
+				HttpSession misession= (HttpSession)request.getSession();
+				misession.setAttribute("idUsuario", "luis@l.es");
+				
+				request.getRequestDispatcher("/lista_proyectos").forward(request, response);
 		}else{
 			request.setAttribute("mierror", "Email y contraseña erroneos");
 			doGet(request, response);

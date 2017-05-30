@@ -109,17 +109,20 @@ video{
 }
 
 footer{
-  	background: #222;
-	height: 70px;
-	padding: 0px;
-	margin-bottom: 0px;
-	margin-top: 40px;
+	background: #222;
+    height: 50px;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
 }
-footer p{
-  font-size: 10px;
-  text-align: center;
-  position: relative;
-  top: 40px;
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top: 20px;
 }
 footer .techG{
   font-family: 'Kaushan Script', cursive;

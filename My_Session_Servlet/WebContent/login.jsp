@@ -18,12 +18,15 @@
 					<h2>Log In</h2>
 				</header>
 
-				<c:if test="$(not empty mierror)">
-					<div class="alert alert-danger text-center">
-						<strong><c:out value="mierror"></c:out></strong>
-					</div>
-				</c:if>
-
+				<%
+					if (request.getAttribute("mierror") != null) {
+				%>
+				<div class="alert alert-danger text-center">
+					<strong><%=request.getAttribute("mierror")%></strong>
+				</div>
+				<%
+					}
+				%>
 				<section>
 					<form method="post" id="loginForm" novalidate>
 						<div class="form-group <%=errorclass%>">

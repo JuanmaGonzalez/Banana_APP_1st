@@ -28,11 +28,11 @@
 					}
 				%>
 				<section>
-					<form method="post" id="loginForm" novalidate>
+					<form method="post" action="login" id="loginForm"  novalidate>
 						<div class="form-group <%=errorclass%>">
 							<label for="email">Correo electrónico: </label> <input
 								class="form-control" type="email" name="email" id="email"
-								placeholder="email@ejemplo.com" required>
+								placeholder="email@ejemplo.com" value="ricardo@r.es" required>
 							<div class="mensajes_error">
 								<div id="email[valueMissing]" class="errorP">Introduzca
 									sus datos.</div>
@@ -42,7 +42,7 @@
 						</div>
 						<div class="form-group <%=errorclass%>">
 							<label for="pass">Contraseña: </label> <input
-								class="form-control" type="password" name="password" id="pass"
+								class="form-control" type="password" name="password" id="pass" value="qwerty"
 								placeholder="Contraseña" minlength="6" pattern="[a-z 0-9]*"
 								required>
 							<div class="mensajes_error">

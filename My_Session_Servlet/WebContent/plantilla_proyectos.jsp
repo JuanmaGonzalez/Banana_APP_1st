@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page import="com.juanma.models.Proyectos"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -10,7 +11,7 @@
 	<jsp:include page="header.jsp"></jsp:include>
 
 <% 
-Proyectos[] listaRecibida = ( Proyectos [])request.getAttribute("listaProyectosMostrar");
+ArrayList<Proyectos> listaRecibida = (ArrayList<Proyectos>)request.getAttribute("listaProyectosMostrar");
 %>
 
 	<section>
@@ -22,13 +23,13 @@ Proyectos[] listaRecibida = ( Proyectos [])request.getAttribute("listaProyectosM
 
 					<table class="table table-striped table-hover">
 						<tr>
-							<th>Identificador</th><th>Proyecto</th><th>Fecha</th><th>Estado</th>
+							<th>Identificador</th><th>Usuario</th><th>Proyecto</th><th>Responsable</th><th>Fecha Activación</th><th>Fecha Prevista Fina</th><th>Proyecto Activo</th>
 						</tr>
 
 						<% if(listaRecibida!=null) for(Proyectos maq:listaRecibida){ %>
 
 						<tr>
-							<td><%=maq.getCodigo() %></td><td><b><%=maq.getMarca() %></b></td><td><%=maq.getTipo() %></td><td><%=maq.getPrecio() %></td>
+							<td><%=maq.getCodigo()%></td> <td><%=maq.getIdUsuario()%></td> <td><%=maq.getTitulo() %></td><td><%=maq.getResponsable()%></td><td><%=maq.getFechaActivacion()%></td><td><%=maq.getFechaPrevistaFinal()%></td><td><%=maq.isActivo()%></td>
 						</tr>
 
 						<%} %>

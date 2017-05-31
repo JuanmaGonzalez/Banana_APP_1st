@@ -10,8 +10,12 @@
 %>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
+<<<<<<< HEAD
 
 
+=======
+	
+>>>>>>> branch 'master' of https://github.com/JuanmaGonzalez/banana-app.git
 	<section>
 		<div class="container">
 			<div class="row">

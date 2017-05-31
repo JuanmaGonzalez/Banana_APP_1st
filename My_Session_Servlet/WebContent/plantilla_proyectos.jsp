@@ -28,7 +28,7 @@ Proyectos[] listaRecibida = ( Proyectos [])request.getAttribute("listaProyectosM
 						<% if(listaRecibida!=null) for(Proyectos maq:listaRecibida){ %>
 
 						<tr>
-							<td><b><%=maq.getMarca() %></b></td><td><%=maq.getCodigo() %></td><td><%=maq.getTipo() %></td><td><%=maq.getPrecio() %></td>
+							<td><%=maq.getCodigo() %></td><td><b><%=maq.getMarca() %></b></td><td><%=maq.getTipo() %></td><td><%=maq.getPrecio() %></td>
 						</tr>
 
 						<%} %>

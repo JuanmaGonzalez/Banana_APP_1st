@@ -2,57 +2,99 @@ package com.juanma.models;
 
 public class Proyectos {
 	private String codigo;
-	private String marca;
-	private String tipo;
-	private int precio;
+	private String idUsuario;
+	private String titulo;
+	private String responsable;
+	private java.util.Date fechaActivacion;
+	private java.util.Date fechaPrevistaFinal;
+	private boolean activo;
 	
-	public Proyectos (String marca, String tipo,int precio) {
-		this.codigo = ""+Math.random();
-		this.marca=marca;
-		this.tipo = tipo;
-		this.precio = precio;
+	public Proyectos(String idUsuario, String titulo, String responsable, java.util.Date fechaActivacion,
+			java.util.Date fechaPrevistaFinal, boolean activo ) {
+		
+		this.setCodigo(""+Math.random());
+		this.idUsuario = idUsuario;
+		this.titulo = titulo;
+		this.responsable = responsable;
+		this.fechaActivacion = fechaActivacion;
+		this.fechaPrevistaFinal = fechaPrevistaFinal;
+		this.activo = activo;
+	}	
+
+	public String getTitulo() {
+		return titulo;
 	}
 
-	public int comprar(){
-		return this.precio;
+
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
-	public String showData() {
-		return this.marca +":"+this.tipo+":"+this.precio;
+
+
+	public java.util.Date getFechaActivacion() {
+		return fechaActivacion;
 	}
+
+
+
+	public void setFechaActivacion(java.util.Date fechaActivacion) {
+		this.fechaActivacion = fechaActivacion;
+	}
+
+
+
+	public java.util.Date getFechaPrevistaFinal() {
+		return fechaPrevistaFinal;
+	}
+
+
+
+	public void setFechaPrevistaFinal(java.util.Date fechaPrevistaFinal) {
+		this.fechaPrevistaFinal = fechaPrevistaFinal;
+	}
+
+
+
+	public String getIdUsuario() {
+		return idUsuario;
+	}
+	
+	
+	public void setIdUsuario(String idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+	public String getDescripcion() {
+		return titulo;
+	}
+	public void settitulo(String descripcion) {
+		this.titulo = descripcion;
+	}
+	public String getResponsable() {
+		return responsable;
+	}
+	public void setResponsable(String responsable) {
+		this.responsable = responsable;
+	}
+	
+	public boolean isActivo() {
+		return activo;
+	}
+	public void setActivo(boolean activo) {
+		this.activo = activo;
+	}
+
 
 	public String getCodigo() {
 		return codigo;
 	}
 
+
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-
-	public int getPrecio() {
-		return precio;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	public void setPrecio(int precio) {
-		this.precio = precio;
-	}
-
-	public String getMarca() {
-		return marca;
-	}
-
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
+	
 	
 	
 }

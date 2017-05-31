@@ -8,7 +8,7 @@
       <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Proyectos</a></li>
-          <li><a href="#">Tareas</a></li>
+          <li><a href="plantilla_proyectos_info.jsp">Detalle Proyecto</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li id="profileBtn"><a class="navItems glyphicon glyphicon-user" href="profile.html"><span class="profile">Hola ${idUsuario}</span></a></li>

@@ -10,7 +10,7 @@ public class Proyectos {
 	private boolean activo;
 	
 	public Proyectos(String idUsuario, String titulo, String responsable, java.util.Date fechaActivacion,
-			java.util.Date fechaPrevistaFinal, boolean activo ) {
+			java.util.Date fechaPrevistaFinal, boolean activo  ) {
 		
 		this.setCodigo(""+Math.random());
 		this.idUsuario = idUsuario;

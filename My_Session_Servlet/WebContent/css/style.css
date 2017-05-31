@@ -380,7 +380,7 @@ textarea.form-control{
 .textBox{
   height: 130px;
   overflow-y: scroll;
-  background-color: #ecf2f9;
+  background-color: #FFFFFF;
   margin-right: 5px;
   padding-left: 5px;
 }
@@ -391,9 +391,9 @@ textarea.form-control{
   width:100%;
 }
 .fileList{
-  height: 60px;
+  height: 100px;
     border-radius: 4px;
-  background: #ecf2f9;
+  background: #FFFFFF;
   -webkit-box-shadow:0px 1px 1px 0px rgba(0,0,0,0.5);
   -moz-box-shadow:0px 1px 1px 0px rgba(0,0,0,0.5);
   box-shadow:0px 1px 1px 0px rgba(0,0,0,0.5);

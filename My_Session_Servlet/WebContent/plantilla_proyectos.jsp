@@ -23,13 +23,13 @@ ArrayList<Proyectos> listaRecibida = (ArrayList<Proyectos>)request.getAttribute(
 
 					<table class="table table-striped table-hover">
 						<tr>
-							<th>Identificador</th><th>Usuario</th><th>Proyecto</th><th>Responsable</th><th>Fecha Activación</th><th>Fecha Prevista Fina</th><th>Proyecto Activo</th>
+							<th>Detalle Proyecto</th><th>Identificador</th><th>Usuario</th><th>Proyecto</th><th>Responsable</th><th>Fecha Activación</th><th>Fecha Prevista Fina</th><th>Proyecto Activo</th>
 						</tr>
 
 						<% if(listaRecibida!=null) for(Proyectos maq:listaRecibida){ %>
 
 						<tr>
-							<td><%=maq.getCodigo()%></td> <td><%=maq.getIdUsuario()%></td> <td><%=maq.getTitulo() %></td><td><%=maq.getResponsable()%></td><td><%=maq.getFechaActivacion()%></td><td><%=maq.getFechaPrevistaFinal()%></td><td><%=maq.isActivo()%></td>
+							<td><a href="/detalle_proyecto?idProyecto=<%=maq.getTitulo()%>"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></a></td><td><%=maq.getCodigo()%></td> <td><%=maq.getIdUsuario()%></td> <td><%=maq.getTitulo() %></td><td><%=maq.getResponsable()%></td><td><%=maq.getFechaActivacion()%></td><td><%=maq.getFechaPrevistaFinal()%></td><td><%=maq.isActivo()%></td>
 						</tr>
 
 						<%} %>

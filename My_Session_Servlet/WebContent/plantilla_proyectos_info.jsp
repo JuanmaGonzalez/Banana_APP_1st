@@ -10,9 +10,7 @@
 %>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
-
-
-
+	
 	<section>
 		<div class="container">
 			<div class="row">

@@ -25,55 +25,41 @@ public class Proyectos {
 		return titulo;
 	}
 
-
-
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-
-
 
 	public java.util.Date getFechaActivacion() {
 		return fechaActivacion;
 	}
 
-
-
 	public void setFechaActivacion(java.util.Date fechaActivacion) {
 		this.fechaActivacion = fechaActivacion;
 	}
-
-
 
 	public java.util.Date getFechaPrevistaFinal() {
 		return fechaPrevistaFinal;
 	}
 
-
-
 	public void setFechaPrevistaFinal(java.util.Date fechaPrevistaFinal) {
 		this.fechaPrevistaFinal = fechaPrevistaFinal;
 	}
 
-
-
 	public String getIdUsuario() {
 		return idUsuario;
-	}
-	
+	}	
 	
 	public void setIdUsuario(String idUsuario) {
 		this.idUsuario = idUsuario;
 	}
-	public String getDescripcion() {
-		return titulo;
-	}
+			
 	public void settitulo(String descripcion) {
 		this.titulo = descripcion;
 	}
 	public String getResponsable() {
 		return responsable;
 	}
+	
 	public void setResponsable(String responsable) {
 		this.responsable = responsable;
 	}
@@ -85,11 +71,9 @@ public class Proyectos {
 		this.activo = activo;
 	}
 
-
 	public String getCodigo() {
 		return codigo;
 	}
-
 
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;

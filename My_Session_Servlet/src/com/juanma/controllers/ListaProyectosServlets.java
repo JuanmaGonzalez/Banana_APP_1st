@@ -32,17 +32,17 @@ public class ListaProyectosServlets extends HttpServlet {
 
 			try {
 				listaProyectos = new Proyectos[] {
-						new Proyectos("ricardo@r.es", "Proyecto de Gestion Ambiental", "Ricardo",
+						new Proyectos("ricardo@r.es", "Proyecto de Gestion Ambiental 01", "Ricardo",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-						new Proyectos("ricardo@r.es", "Proyecto de Gestion Documental", "Ricardo",
+						new Proyectos("ricardo@r.es", "Proyecto de Gestion Documental 01", "Ricardo",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), false),
-						new Proyectos("juana@j.es", "Proyecto de Gestion Historica", "Juana",
+						new Proyectos("juana@j.es", "Proyecto de Gestion Historica 01", "Juana",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-						new Proyectos("juana@j.es", "Proyecto de Gestion Ambiental", "Juana",
+						new Proyectos("juana@j.es", "Proyecto de Gestion Ambiental 02", "Juana",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-						new Proyectos("luis@l.es", "Proyecto de Gestion Documental", "Luis",
+						new Proyectos("luis@l.es", "Proyecto de Gestion Documental 02", "Luis",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), false),
-						new Proyectos("luis@l.es", "Proyecto de Gestion Historica", "Luis",
+						new Proyectos("luis@l.es", "Proyecto de Gestion Historica 02", "Luis",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true)};
 
 			} catch (Exception e) {
@@ -55,7 +55,6 @@ public class ListaProyectosServlets extends HttpServlet {
 				}
 			}
 
-			//System.out.println("***Lista:" + lisProyectostUser);
 
 			request.setAttribute("listaProyectosMostrar", lisProyectostUser);
 

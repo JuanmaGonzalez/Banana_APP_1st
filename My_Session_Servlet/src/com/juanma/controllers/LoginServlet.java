@@ -27,8 +27,11 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String email = request.getParameter("email");
 		String contrasena = request.getParameter("password");
+		
+		System.out.println("***"+email+":"+contrasena+":"+ email.equals("ricardo@r.es") +":"+ contrasena.equals("qwerty") );
 				
 		if( email.equals("ricardo@r.es") && contrasena.equals("qwerty") ){
+			
 			HttpSession misession= (HttpSession)request.getSession();
 			misession.setAttribute("idUsuario", "ricardo@r.es");
 			

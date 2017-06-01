@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.juanma.models.Tarea"%>
 <%@page import="com.juanma.models.Proyectos"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -5,9 +7,17 @@
 <html>
 
 <jsp:include page="head.jsp"></jsp:include>
-<%
-	Proyectos[] listaRecibida = (Proyectos[]) request.getAttribute("infoProyectosMostrar");
+
+
+<% 
+Tarea[] listaRecibida = (Tarea[]) request.getAttribute("listaTareasMostrar");
+
+	Proyectos Proyecto =  (Proyectos)request.getAttribute("proyectoUserAMostrar");
 %>
+
+*${listaTareasMostrar}*
+
+
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 
@@ -18,62 +28,51 @@
 
 
 					<div class="pageTitle ">
-						<h1>Proyecto01</h1>
+						<h1><%=Proyecto.getTitulo() %></h1>
 					</div>
 
 					<aside class="col-xs-12 col-sm-3">
 						<div class="col-xs-12">
-							<ul class="pInfo">
+					
+					
+					<ul class="pInfo">
 								
-								<li><p>
-										<strong>Identificador:</strong> <span>test</span>
+								 <li><p>
+									 	<strong>Identificador:</strong> <span><%=Proyecto.getCodigo()%></span> 
 									</p></li>
 								<li><p>
-										<strong>Fecha de entrega:</strong> <span>00/00/00</span>
+										<strong>Fecha de entrega:</strong> <span><%=Proyecto.getFechaPrevistaFinal()%></span>
 									</p></li>
 								<li><p>
-										<strong>Asignada a:</strong> <span>${idUsuario}</span>
+										<strong>Asignada a:</strong> <span><%=Proyecto.getResponsable()%></span>
 									</p></li>
 								<li><p>
-										<strong>Status:</strong> <span>activo</span>
-									</p></li>
+										<strong>Status:</strong> <span><%=Proyecto.isActivo()%></span>
+									</p></li> 
 							</ul>
+						
+						
+							
 						</div>
 
 						<table class="table table-striped table-hover">
 							<tr>
-								<th>Tareas</th>
-								<th></th>
+								<th>Identificador</th><th>Tarea</th><th>Responsable</th>
 							</tr>
+	
+							<% 
+							
+								if(listaRecibida!=null) for(Tarea maq:listaRecibida){ 
+								
+							%>
+	
+							<tr>
+								<td><%=maq.getCodigo()%></td> <td><%=maq.getTarea() %></td><td><%=maq.getResponsable()%></td>
+							</tr>
+	
+							<% } %>
 
-							<tr>
-								<td>Tarea 01</td>
-								<td><button class="btn_del_Task glyphicon glyphicon-trash"></button></td>
-							</tr>
-							<tr>
-								<td>Tarea 02</td>
-								<td><button class="btn_del_Task glyphicon glyphicon-trash"></button></td>
-							</tr>
-							<tr>
-								<td>Tarea 03</td>
-								<td><button class="btn_del_Task glyphicon glyphicon-trash"></button></td>
-							</tr>
-							<tr>
-								<td>Tarea 04</td>
-								<td><button class="btn_del_Task glyphicon glyphicon-trash"></button></td>
-							</tr>
-							<tr>
-								<td>Tarea 05</td>
-								<td><button class="btn_del_Task glyphicon glyphicon-trash"></button></td>
-							</tr>
-							<tr>
-								<td>Tarea 06</td>
-								<td><button class="btn_del_Task glyphicon glyphicon-trash"></button></td>
-							</tr>
-
-
-
-						</table>
+					</table>
 
 					</aside>
 					<article class="col-xs-12 col-sm-9">

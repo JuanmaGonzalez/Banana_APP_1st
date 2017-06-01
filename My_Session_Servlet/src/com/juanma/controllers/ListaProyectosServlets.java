@@ -32,12 +32,18 @@ public class ListaProyectosServlets extends HttpServlet {
 
 			try {
 				listaProyectos = new Proyectos[] {
-						new Proyectos("ricardo@r.es", "Proyecto de Gestion Ambiental", "Juan",
+						new Proyectos("ricardo@r.es", "Proyecto de Gestion Ambiental", "Ricardo",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-						new Proyectos("ricardo@r.es", "Proyecto de Gestion Documental", "Juan",
+						new Proyectos("ricardo@r.es", "Proyecto de Gestion Documental", "Ricardo",
 								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), false),
-						new Proyectos("juana@j.es", "Proyecto de Gestion Ambiental15", "Juan",
-								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true) };
+						new Proyectos("juana@j.es", "Proyecto de Gestion Historica", "Juana",
+								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
+						new Proyectos("juana@j.es", "Proyecto de Gestion Ambiental", "Juana",
+								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
+						new Proyectos("luis@l.es", "Proyecto de Gestion Documental", "Luis",
+								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), false),
+						new Proyectos("luis@l.es", "Proyecto de Gestion Historica", "Luis",
+								formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true)};
 
 			} catch (Exception e) {
 				// TODO: handle exception

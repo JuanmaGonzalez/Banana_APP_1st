@@ -10,12 +10,7 @@
 %>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
-<<<<<<< HEAD
 
-
-=======
-	
->>>>>>> branch 'master' of https://github.com/JuanmaGonzalez/banana-app.git
 	<section>
 		<div class="container">
 			<div class="row">
@@ -29,9 +24,7 @@
 					<aside class="col-xs-12 col-sm-3">
 						<div class="col-xs-12">
 							<ul class="pInfo">
-								<li><p>
-										<strong>Título del Proyecto:</strong> <span>Proyecto01</span>
-									</p></li>
+								
 								<li><p>
 										<strong>Identificador:</strong> <span>test</span>
 									</p></li>

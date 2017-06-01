@@ -37,27 +37,7 @@ public class DetalleProyectosServlets extends HttpServlet {
 						new Tarea("Proyecto de Gestion Ambiental 01", "Tarea 02", "Ricardo", "02"),
 						new Tarea("Proyecto de Gestion Ambiental 01", "Tarea 03", "Ricardo", "03"),
 						new Tarea("Proyecto de Gestion Ambiental 01", "Tarea 04", "Ricardo", "04"),
-						new Tarea("Proyecto de Gestion Ambiental 02", "Tarea 05", "Juana", "05"),
-						new Tarea("Proyecto de Gestion Ambiental 02", "Tarea 06", "Juana", "06"),
-						new Tarea("Proyecto de Gestion Ambiental 02", "Tarea 07", "Juana", "07"),
-						new Tarea("Proyecto de Gestion Ambiental 02", "Tarea 08", "Juana", "08"),
-						new Tarea("Proyecto de Gestion Documental 01", "Tarea 05", "Ricardo", "09"),
-						new Tarea("Proyecto de Gestion Documental 01", "Tarea 06", "Ricardo", "10"),
-						new Tarea("Proyecto de Gestion Documental 01", "Tarea 07", "Ricardo", "11"),
-						new Tarea("Proyecto de Gestion Documental 01", "Tarea 08", "Ricardo", "12"),
-						new Tarea("Proyecto de Gestion Documental 02", "Tarea 05", "Luis", "09"),
-						new Tarea("Proyecto de Gestion Documental 02", "Tarea 06", "Luis", "10"),
-						new Tarea("Proyecto de Gestion Documental 02", "Tarea 07", "Luis", "11"),
-						new Tarea("Proyecto de Gestion Documental 02", "Tarea 08", "Luis", "12"),
-						new Tarea("Proyecto de Gestion Historica 01", "Tarea 05", "Juana", "09"),
-						new Tarea("Proyecto de Gestion Historica 01", "Tarea 06", "Juana", "10"),
-						new Tarea("Proyecto de Gestion Historica 01", "Tarea 07", "Juana", "11"),
-						new Tarea("Proyecto de Gestion Historica 01", "Tarea 08", "Juana", "12"),
-						new Tarea("Proyecto de Gestion Historica 02", "Tarea 05", "Luis", "09"),
-						new Tarea("Proyecto de Gestion Historica 02", "Tarea 06", "Luis", "10"),
-						new Tarea("Proyecto de Gestion Historica 02", "Tarea 07", "Luis", "11"),
-						new Tarea("Proyecto de Gestion Historica 02", "Tarea 08", "Luis", "12")
-						};
+						new Tarea("Proyecto de Gestion Ambiental 02", "Tarea 05", "Juana", "05")};
 
 			} catch (Exception e) {
 				// TODO: handle exception

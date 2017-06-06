@@ -1,6 +1,6 @@
 package com.juanma.models;
 
-public class Proyectos {
+public class Proyecto {
 	private String codigo;
 	private String idUsuario;
 	private String titulo;
@@ -9,7 +9,7 @@ public class Proyectos {
 	private java.util.Date fechaPrevistaFinal;
 	private boolean activo;
 	
-	public Proyectos(String idUsuario, String titulo, String responsable, java.util.Date fechaActivacion,
+	public Proyecto(String idUsuario, String titulo, String responsable, java.util.Date fechaActivacion,
 			java.util.Date fechaPrevistaFinal, boolean activo  ) {
 		
 		this.setCodigo(""+Math.random());

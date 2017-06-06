@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.juanma.models.Proyectos;
+import com.juanma.models.Proyecto;
 import com.juanma.models.Tarea;
 
 @WebServlet("/detalle_proyecto")
@@ -64,33 +64,33 @@ public class DetalleProyectosServlets extends HttpServlet {
 		}
 	}
 
-	private Proyectos getProyecto(String idProyecto) {
-		Proyectos proyectoUserAMostrar = null;
+	private Proyecto getProyecto(String idProyecto) {
+		Proyecto proyectoUserAMostrar = null;
 
-		Proyectos[] listaProyectos = null;
+		Proyecto[] listaProyectos = null;
 
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
 
 		try {
-			listaProyectos = new Proyectos[] {
-					new Proyectos("ricardo@r.es", "Proyecto de Gestion Ambiental 01", "Ricardo",
+			listaProyectos = new Proyecto[] {
+					new Proyecto("ricardo@r.es", "Proyecto de Gestion Ambiental 01", "Ricardo",
 							formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-					new Proyectos("ricardo@r.es", "Proyecto de Gestion Documental 01", "Ricardo",
+					new Proyecto("ricardo@r.es", "Proyecto de Gestion Documental 01", "Ricardo",
 							formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), false),
-					new Proyectos("juana@j.es", "Proyecto de Gestion Historica 01", "Juana",
+					new Proyecto("juana@j.es", "Proyecto de Gestion Historica 01", "Juana",
 							formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-					new Proyectos("juana@j.es", "Proyecto de Gestion Ambiental 02", "Juana",
+					new Proyecto("juana@j.es", "Proyecto de Gestion Ambiental 02", "Juana",
 							formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true),
-					new Proyectos("luis@l.es", "Proyecto de Gestion Documental 02", "Luis",
+					new Proyecto("luis@l.es", "Proyecto de Gestion Documental 02", "Luis",
 							formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), false),
-					new Proyectos("luis@l.es", "Proyecto de Gestion Historica 02", "Luis",
+					new Proyecto("luis@l.es", "Proyecto de Gestion Historica 02", "Luis",
 							formatter.parse("01-01-2017"), formatter.parse("2018-12-01"), true) };
 
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 
-		for (Proyectos maq : listaProyectos) {
+		for (Proyecto maq : listaProyectos) {
 			if (maq.getTitulo().toLowerCase().equals(idProyecto.toLowerCase())) {
 				proyectoUserAMostrar=maq;
 			}
